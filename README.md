@@ -8,7 +8,7 @@ You are working solo, and you cannot ask for help during the lab. Your tool is `
 ## Project structure
 
 ```
-sigma-cafe/
+sigmacafe_starter/
 ├── index.html            Home page
 ├── pages/
 │   ├── bill.html         Split the bill
@@ -36,17 +36,34 @@ You should not need to edit anything in `lib/`, `css/` or `data/`.
 
 ## Setup
 
-1. **Fork** this repository (button at the top right of the GitHub page).
-2. **Clone your fork** (use your own username, not mine):
-   ```
-   git clone https://github.com/<your-username>/sigma-cafe.git
-   cd sigma-cafe
-   code .
-   ```
-3. Open `index.html` with **Live Server** (right-click, Open with Live Server).
-4. Open the browser console: press **F12**, then click the **Console** tab.
-5. **Turn on Issues in your fork.** GitHub switches Issues off on forks.
-   Go to your fork, then Settings, then General, then scroll to Features and tick **Issues**.
+1. **Fork the project.** Open https://github.com/teamsigmaschool/sigmacafe_starter and click **Fork**
+   (top right). On the next page, click **Create fork**. You can keep the name `sigmacafe_starter`,
+   or rename it if you want.
+2. **Copy the link to your fork.** GitHub now shows your own copy, under your username.
+   Click the green **Code** button, make sure **HTTPS** is selected, then click the copy icon.
+3. **Open VS Code and a terminal.** Go to Terminal, then New Terminal.
+   On Windows, click the small arrow next to the **+** in the terminal panel and choose **Git Bash**.
+4. **Go to the folder where you want to save the project.** For example, your Desktop:
+
+```
+cd Desktop
+```
+
+5. **Clone your fork.** Paste the link you copied (use your own username):
+
+```
+git clone https://github.com/<your-username>/sigmacafe_starter.git
+```
+
+6. **Open the project.** Move into the folder and open it in VS Code:
+
+```
+cd sigmacafe_starter
+code .
+```
+
+A new VS Code window opens with the project in the Explorer on the left. 7. Open `index.html` with **Live Server** (right-click, Open with Live Server). 8. Open the browser console: press **F12**, then click the **Console** tab. 9. **Turn on Issues in your fork.** GitHub switches Issues off on forks.
+Go to your fork, then Settings, then General, then scroll to Features and tick **Issues**.
 
 ## The bugs
 
@@ -70,13 +87,10 @@ because the problem is in what the program is _doing_, not in how the code looks
    - _What is actually in this variable?_ `console.log('result:', result);`
    - _Did this code run at all?_ `console.log('handler ran');`
    - _Which element did I get?_ `console.log(button);`
-
-   Use a label so you can tell the lines apart in the console.
-
+     Use a label so you can tell the lines apart in the console.
 4. **Fix it.** Change the line that is wrong. Save and reload.
 5. **Verify it.** Repeat the steps from step 1. When it works, delete your `console.log` lines.
-
-Guessing is slower than logging. If you are not sure what a value is, print it.
+   Guessing is slower than logging. If you are not sure what a value is, print it.
 
 ## Report each bug as a GitHub issue
 
@@ -88,6 +102,7 @@ File **one issue per bug** in your own fork, so three issues in total.
 3. If the issue is blank, copy the template below into it.
 4. Fill in every section. Paste your real `console.log` lines and what they printed.
 5. Click **Submit new issue**, copy the URL, and paste it in the Google chat.
+   Use this issue title format: `Bug: <page> - <short description>`
 
 ### Issue template (copy this if your issue is blank)
 
@@ -95,10 +110,6 @@ File **one issue per bug** in your own fork, so three issues in total.
 ## Description
 
 One sentence: what is wrong?
-
-## Page
-
-Split the bill / Menu / Team
 
 ## Steps to reproduce
 
@@ -113,6 +124,4 @@ What should happen?
 ## Actual result
 
 What happens instead? Paste the wrong numbers or describe the screen.
-
-Use this issue title format: `Bug: <page> - <short description>`
 ```
