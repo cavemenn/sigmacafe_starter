@@ -18,6 +18,10 @@ function formatRM(amount) {
   return "RM " + Number(amount).toFixed(2);
 }
 
+function toNearest5sen(amount) {
+  return (Math.round(amount * 20) / 20).toFixed(2);
+}
+
 function calculate() {
   const bill = Number(billInput.value);
   const tipPercent = Number(tipSelect.value);
@@ -30,7 +34,7 @@ function calculate() {
   message.textContent = "";
 
   const tipAmount = (bill * tipPercent) / 100;
-  const total = Rounding.toNearest5Sen(bill + tipAmount);
+  const total = toNearest5sen(bill + tipAmount);
   const perPerson = total / people;
 
   receipt.bill.textContent = formatRM(bill);
