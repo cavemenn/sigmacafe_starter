@@ -31,7 +31,7 @@ function filterBy(category) {
 }
 
 chips.forEach((chip) => {
-  chip.addEventListener("click", () => filterBy(chip.textContent));
+  chip.addEventListener("click", () => filterBy(chip.textContent.trim()));
 });
 
 render(MENU_ITEMS);
