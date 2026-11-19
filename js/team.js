@@ -1,7 +1,7 @@
 // js/team.js: Team page (uses STAFF from data/staff.js)
 
 const teamList = document.getElementById("team-list");
-const sortButton = document.getElementById("sort");
+const sortButton = document.querySelector(".btn");
 
 let team = [...STAFF];
 
