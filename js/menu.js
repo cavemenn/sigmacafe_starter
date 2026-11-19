@@ -1,5 +1,3 @@
-// js/menu.js: Menu page (uses MENU_ITEMS from data/menu.js)
-
 const list = document.getElementById("menu-list");
 const chips = document.querySelectorAll(".chip");
 
@@ -23,17 +21,13 @@ function render(items) {
 }
 
 function filterBy(category) {
-  console.log(category);
   const wanted = category.toLowerCase();
-  console.log(category);
   if (wanted === "all") {
     render(MENU_ITEMS);
     return;
   }
   const filtered = MENU_ITEMS.filter((item) => item.category === wanted);
-  console.log(filtered);
   render(filtered);
-  console.log("Filtered items:", filtered);
 }
 
 chips.forEach((chip) => {

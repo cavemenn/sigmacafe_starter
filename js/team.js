@@ -1,5 +1,3 @@
-// js/team.js: Team page (uses STAFF from data/staff.js)
-
 const teamList = document.getElementById("team-list");
 const sortButton = document.querySelector(".btn");
 
@@ -26,12 +24,10 @@ function renderTeam() {
 }
 
 function sortByName() {
-  console.log("sortByName ran");
   team.sort((a, b) => a.name.localeCompare(b.name));
   renderTeam();
 }
 
 sortButton.addEventListener("click", sortByName);
-console.log("sortButton:", sortButton);
 
 renderTeam();

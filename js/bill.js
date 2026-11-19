@@ -30,9 +30,7 @@ function calculate() {
   message.textContent = "";
 
   const tipAmount = (bill * tipPercent) / 100;
-  // Malaysian cash rounding: nearest 5 sen
   const total = Rounding.toNearest5Sen(bill + tipAmount);
-  console.log("This is total:", total);
   const perPerson = total / people;
 
   receipt.bill.textContent = formatRM(bill);
