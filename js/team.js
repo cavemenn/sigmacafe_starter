@@ -1,5 +1,5 @@
 const teamList = document.getElementById("team-list");
-const sortButton = document.querySelector(".btn");
+const sortButton = document.getElementById("sort");
 
 let team = [...STAFF];
 
