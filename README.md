@@ -97,8 +97,7 @@ because the problem is in what the program is _doing_, not in how the code looks
 File **one issue per bug** in your own fork, so three issues in total.
 
 1. In your fork, click the **Issues** tab, then **New issue**.
-2. If you see a **Bug report** option, click **Get started** next to it.
-   The form is filled in for you.
+2. Choose **Bug report**. The form opens with the template already filled in.
 3. If the issue is blank, copy the template below into it.
 4. Fill in every section. Paste your real `console.log` lines and what they printed.
 5. Click **Submit new issue**, copy the URL, and paste it in the Google chat.
